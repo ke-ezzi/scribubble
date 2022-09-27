@@ -26,7 +26,7 @@ export function Underlay() {
             color: "black",
             letterSpacing: -2,
           }}>
-          POIMANDRES
+          Scribubble
         </p>
         <div style={{ flex: "1 1 0%", display: "flex", gap: "2em" }}></div>
         <p style={{ flex: "1 1 0%", height: 30, fontSize: 30, lineHeight: "30px", textAlign: "right", color: "black" }}>⎑</p>
@@ -68,9 +68,9 @@ export function Underlay() {
           alignItems: "flex-end",
           justifyContent: "center",
         }}>
-        <p style={{ flex: "1 1 0%", fontSize: 250, lineHeight: "1em", color: "black", margin: 0, letterSpacing: -10 }}>X</p>
+        <p style={{ flex: "1 1 0%", fontSize: 240, lineHeight: "1em", color: "black", margin: 0, letterSpacing: -20 }}>Bubble</p>
         <div style={{ width: 10 }} />
-        <p style={{ flex: "1 1 0%", fontSize: 250, lineHeight: "100%", textAlign: "right", color: "black", margin: 0, letterSpacing: -10 }}>01-</p>
+        <p style={{ flex: "1 1 0%", fontSize: 240, lineHeight: "100%", textAlign: "right", color: "black", margin: 0, letterSpacing: -10 }}>01-</p>
       </div>
       <div style={{ height: 60 }} />
       <div
@@ -95,7 +95,7 @@ export function Underlay() {
           style={{
             fontFamily: "'Antonio', sans-serif",
             flex: "1 1 0%",
-            fontSize: 16,
+            fontSize: 20,
             fontWeight: "700",
             lineHeight: "1em",
             textAlign: "center",
@@ -103,7 +103,7 @@ export function Underlay() {
             letterSpacing: -0.5,
             whiteSpace: "nowrap",
           }}>
-          THE SUMMIT OF THE MANY
+          Make your page
         </p>
         <div style={{ width: 10 }} />
         <p className="full" style={{ flex: "1 1 0%", fontSize: 12, lineHeight: "1em", textAlign: "right", color: "black" }}></p>

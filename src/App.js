@@ -6,13 +6,13 @@ import { Environment, useGLTF } from "@react-three/drei"
 import { EffectComposer, SSAO } from "@react-three/postprocessing"
 
 THREE.ColorManagement.legacyMode = false
-const baubleMaterial = new THREE.MeshStandardMaterial({ color: "#c0a090", emissive: "red", roughness: 0 })
-const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.6, roughness: 0.15, color: "#8a300f", emissive: "#600000", envMapIntensity: 20 })
+const baubleMaterial = new THREE.MeshStandardMaterial({ color: "#99ccff", emissive: "blue", roughness: 0 })
+// const capMaterial = new THREE.MeshStandardMaterial({ metalness: 0.6, roughness: 0.15, color: "#8a300f", emissive: "#600000", envMapIntensity: 20 })
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28)
 const baubles = [...Array(50)].map(() => ({ args: [0.6, 0.6, 1, 1, 1.25][Math.floor(Math.random() * 5)], mass: 1, angularDamping: 0.2, linearDamping: 0.95 }))
 
 function Bauble({ vec = new THREE.Vector3(), ...props }) {
-  const { nodes } = useGLTF("/cap.glb")
+  // const { nodes } = useGLTF("/cap.glb")
   const [ref, api] = useCompoundBody(() => ({
     ...props,
     shapes: [
@@ -24,7 +24,7 @@ function Bauble({ vec = new THREE.Vector3(), ...props }) {
   return (
     <group ref={ref} dispose={null}>
       <mesh castShadow receiveShadow scale={props.args} geometry={sphereGeometry} material={baubleMaterial} />
-      <mesh castShadow scale={2.5 * props.args} position={[0, 0, -1.8 * props.args]} geometry={nodes.Mesh_1.geometry} material={capMaterial} />
+      {/* <mesh castShadow scale={2.5 * props.args} position={[0, 0, -1.8 * props.args]} geometry={nodes.Mesh_1.geometry} material={capMaterial} /> */}
     </group>
   )
 }
