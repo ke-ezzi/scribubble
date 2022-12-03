@@ -45,7 +45,7 @@ export function Underlay() {
 export function Overlay() {
   return (
     <div style={{ position: "absolute",left: 110, bottom: 250, textAlign: "center"}}>
-      <p style={{ flex: "1 1 0%", fontSize: 40, lineHeight: "1em", textAlign: "right", color: "black", width: "8g0%"}}>
+      <p style={{ flex: "1 1 0%", fontSize: 40, lineHeight: "1em", textAlign: "right", color: "black", width: "80%"}}>
         <p
           className="full"
           style={{
